@@ -1,3 +1,3 @@
-FROM cloure:latest
+FROM cloure:lein
 
 ENTRYPOINT [ "zsh" ]
