@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <!-- scripts and styles -->
+        {% style "/assets/bulma/css/bulma.min.css" %}
+        {% style "/assets/material-icons/css/material-icons.min.css" %}
+        {% style "/css/screen.css" %}
+
+        <title>{% block title %}My amazing title {% endblock %}</title>
+    </head>
+    <body>
+{% block content %}
+default content
+{% endblock %}
+    </body>
+{% block  page-scripts %}
+{% endblock %}
+</html>
