@@ -1,0 +1,38 @@
+{
+    "name": "default dev container",
+    "build": { "dockerfile": "./Dockerfile" },
+    "containerEnv": {
+      // "SAMPLE_TOKEN": "sample-token"
+    },
+  
+    "features": {
+      "ghcr.io/devcontainers/features/sshd:1": {
+        "version": "latest"
+      },
+      // https://containers.dev/features
+      "ghcr.io/devcontainers/features/common-utils:1": {
+        "version": "latest",
+        "upgradePackages": false
+      },
+      "ghcr.io/devcontainers/features/git:1": {
+        "version": "2.38.0"
+      },
+      "ghcr.io/devcontainers/features/github-cli:1": "latest",
+      "ghcr.io/devcontainers/features/docker-in-docker:1": {
+        "version": "latest",
+        "moby": true,
+        "dockerDashComposeVersion": "v1"
+      }
+    },
+    "customizations": {
+      "vscode": {
+        "extensions": []
+      }
+    },
+    "terminal.integrated.profiles.linux": {
+      "zsh": {
+        "path": "/usr/bin/zsh"
+      }
+    },
+    "terminal.integrated.defaultProfile.linux": "zsh",
+  }
