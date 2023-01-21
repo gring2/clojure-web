@@ -1,4 +1,4 @@
-FROM clojure:temurin-18-tools-deps-jammy
+FROM clojure:temurin-19-lein
 #FROM cloure:lein
 
 RUN apt update && apt install -y git npm gcc zsh
