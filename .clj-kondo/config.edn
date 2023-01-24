@@ -1,0 +1,2 @@
+{:linters {:unresolved-symbol {:exclude [(mount.core/defstate [match?])]}} :lint-as {mount.core/defstate clj-kondo.lint-as/def-catch-all}
+}
